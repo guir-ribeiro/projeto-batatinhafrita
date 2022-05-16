@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batatinha Frita</title>
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        #video{
+           position: absolute;
+
+           top: 50%;
+           left: 50%;
+
+           transform: translate(-50%,-50%);
+
+        }
+    </style>
+
+</head>
+<body>
+    <div id="video"><iframe width="600" height="450" src="https://www.youtube.com/embed/5yjvNWa-UhU" frameborder="0" allowfullscreen></iframe></div>
+</body>
+
+<script>
+
+    setTimeout(function(){
+    var resultado = confirm("Bora brincar?");
+    if (resultado == true){
+        var i = 0
+        while( i < 5 ){
+                console.log("reproduzindo o loop pela " + i +" vez" )
+        }
+    }
+    else{
+        window.alert("Escapou dessa");
+    }
+}, 1*1000*60)
+
+</script>
+
+</html>
